@@ -2,8 +2,81 @@ $blue: #3bbfce;
 $red: #CC0000;
 $margin: 16px;
 
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+body, a, ul, li, p, div {
+  font-family: 'Muli', 'Helvetica Neue', sans-serif;
+}
+
+
 h1 {
   color: $blue;
 }
 
+#header {
+  background: pink;
 
+  #headerimage{
+    background: grey;
+    float: left;
+  }
+  
+  #navigation {
+    background: blue;
+    float: left;
+
+    ul {
+      background: yellow;
+    }
+
+      li {
+        background: brown;
+        list-style-type: none;
+        float: left;
+        display: inline;
+        margin: 10px;
+        padding: 2px;   
+      }
+  }
+
+  #social {
+    background: green;
+    // float: right;
+    display: inline;
+
+    p {
+      background: white;
+      margin: 10px;
+      float: left;
+      margin-left: 100px;
+    }
+
+    #facebookimage {
+      background: white;
+      float: right;
+      display: inline;
+      margin: 15px;
+    }
+
+    // #emailimage {
+    //   background: black:
+    // }  
+  }
+}
+
+
+#subtext {
+  background: orange;
+}
